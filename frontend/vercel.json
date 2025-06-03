@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXT_PUBLIC_API_URL": {
+      "description": "URL of your backend API",
+      "required": true
+    },
+    "JWT_SECRET": {
+      "description": "Secret key for JWT token generation",
+      "required": true
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection string",
+      "required": false
+    },
+    "GMAIL_APP_CODE": {
+      "description": "Gmail app code for email notifications",
+      "required": false
+    },
+    "GEMINI_API_KEY": {
+      "description": "Gemini API key for AI features",
+      "required": false
+    }
+  }
+}
